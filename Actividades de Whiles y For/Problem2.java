@@ -6,7 +6,8 @@ public class Problem2 {
         String operacion;
         int numA;
         int numB;
-        while (true) {
+        boolean salir = true;
+        while (salir) {
             System.out.println("Cual será la operación");
             operacion = sc.nextLine();
 
@@ -27,7 +28,7 @@ public class Problem2 {
                 numA = sc.nextInt();
                 System.out.println(numA - (numA + numA));
             } else if (operacion.equals("aturar")) {
-                break;
+                salir = false;
             }
 
         }

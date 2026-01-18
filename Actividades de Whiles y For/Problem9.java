@@ -4,24 +4,7 @@ public class Problem9 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // ACT 1
-        int asterisco = sc.nextInt();
-        for (int i = 0; i < asterisco; i++) {
-            for (int j = 0; j <= i; j++) {
-                System.out.print("*");
-            }
-            System.out.println();
-        }
-        int Numa = sc.nextInt();
-        int Numb = sc.nextInt();
-        if (Numb % Numa == 0) {
-            System.out.println("Si es");
-        } else {
-            System.out.println("No es");
-
-        }
-        sc.nextLine();
-        // ACT 2
+        // ACT 1 Divisor de 10
         boolean seguir = true;
         while (seguir) {
             String num1 = sc.nextLine();
@@ -36,7 +19,7 @@ public class Problem9 {
                 }
             }
         }
-        // ACT 3
+        // ACT 2 suma de numero realizando conversion de Strings a Int
         seguir = true;
         while (seguir) {
             String num1 = sc.nextLine();

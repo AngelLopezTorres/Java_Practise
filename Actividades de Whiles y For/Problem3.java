@@ -11,7 +11,7 @@ public class Problem3 {
             y--; // Cada vez que se sume el resultado a al valor que hayamos asignado y se le
                  // restará 1
         }
-        System.out.println("este es el resultado " + resultado);
+        System.out.println("Este es el resultado " + resultado);
         sc.close();
     }
 }

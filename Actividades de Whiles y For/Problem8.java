@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Problem8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Introduce una frasesita");
+        System.out.println("Introduce cordenadas");
         String palabra = sc.nextLine();
         int x = 0;
         int y = 0;
@@ -26,7 +26,6 @@ public class Problem8 {
             }
             i++;
         }
-
         System.out.println("(" + x + "," + y + ")");
         sc.close();
     }

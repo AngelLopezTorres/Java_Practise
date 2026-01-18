@@ -8,13 +8,13 @@ public class Problem7 {
         String palabra2 = palabra.toLowerCase();
         int a = 0;
         int i = 0;
-        boolean pene = true;
-        while (pene) {
+        boolean keep = true;
+        while (keep) {
             if (palabra2.charAt(i) == 'a') {
                 a++;
             }
             if (palabra2.charAt(i) == '.') {
-                pene = false;
+                keep = false;
             }
 
             i++;
