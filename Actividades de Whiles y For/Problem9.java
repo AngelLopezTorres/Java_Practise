@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Problem9 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         // ACT 1 Divisor de 10
         boolean seguir = true;
+        
         while (seguir) {
             String num1 = sc.nextLine();
             if (num1.equals("*")) {

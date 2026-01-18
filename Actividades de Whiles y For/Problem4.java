@@ -5,6 +5,7 @@ public class Problem4 {
         Scanner sc = new Scanner(System.in);
         int dig = sc.nextInt();
         int n = 0;
+        
         if (dig == 0) {
             n = 1;
         } else if (dig < 0) {

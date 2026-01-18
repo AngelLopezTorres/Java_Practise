@@ -10,7 +10,6 @@ public class Problem2 {
         while (salir) {
             System.out.println("Cual será la operación");
             operacion = sc.nextLine();
-
             if (operacion.equals("sumar")) {
                 System.out.println("Primer número");
                 numA = sc.nextInt();
@@ -30,7 +29,6 @@ public class Problem2 {
             } else if (operacion.equals("aturar")) {
                 salir = false;
             }
-
         }
         sc.close();
     }

@@ -6,7 +6,6 @@ public class Problem6 {
         //Validador de Tarjetas (Algoritmo de Luhn)
         // Usamos una bandera para controlar el bucle principal
         boolean continuar = true;
-
         while (continuar && sc.hasNext()) {
             String tarjeta = sc.next();
 

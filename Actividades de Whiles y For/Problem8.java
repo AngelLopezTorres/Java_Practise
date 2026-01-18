@@ -5,6 +5,7 @@ public class Problem8 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce cordenadas");
         String palabra = sc.nextLine();
+        
         int x = 0;
         int y = 0;
         int i = 0;
