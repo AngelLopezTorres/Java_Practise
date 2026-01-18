@@ -1,1 +1,1 @@
-This activities is about recursion and a function calling itself.
+This activities is about iterations and recursion.
