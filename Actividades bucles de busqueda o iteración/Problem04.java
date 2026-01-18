@@ -2,35 +2,32 @@ import java.util.Scanner;
 
 public class Problem04 {
     public static void main(String[] args) {
-        /*
-         * El programa ha d’imprimir la seqüència amb el nombre p a la posició adequada per tal
-         * que tota la sortida estigui ordenada.
-         */
         Scanner sc = new Scanner(System.in);
-        int nummeter = sc.nextInt();
-        String num;
-        boolean punto = true;
-        boolean termina = true;
-        String guardar = " ";
+        
+        int nummeter = sc.nextInt(); // El número a insertar
+        String guardar = "";
+        boolean ultimo = true;
 
-        while (punto) {
-            num = sc.next();
-            if (num.equals(".")) {
-                punto = false;
-            } else {
-                int num2 = Integer.parseInt(num);
-                if (termina && nummeter <= num2) {
-                    guardar += nummeter;
-                    termina = false;
-                }
-                guardar += +num2 + " ";
+        // Leemos el primer elemento de la secuencia
+        String nums = sc.next();
+
+        while (!nums.equals(".")) {
+            int num2 = Integer.parseInt(nums);
+            if (ultimo && nummeter <= num2) {   // Si el número a insertar es menor o igual al actual, lo ponemos delante
+                guardar += nummeter + " ";
+                ultimo = false;
             }
+            guardar += num2 + " ";  // Añadimos el número actual de la secuencia
+            nums = sc.next(); // Leemos el siguiente
         }
-        if (termina) {
+
+
+        if (ultimo) {// Si terminamos y nummeter era el más grande de todos
             guardar += nummeter;
         }
-        System.out.print(guardar);
+
+        // Imprimimos el resultado final sin espacios extra
+        System.out.println(guardar);
         sc.close();
     }
-
 }
