@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Problem10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
         // Usamos sc.hasNext() para leer mientras haya entrada
         while (sc.hasNext()) {
             String input = sc.next();
@@ -12,7 +11,6 @@ public class Problem10 {
             if (input.equals(".")) {
                 break;
             }
-
                 int n = Integer.parseInt(input);
                 int p = n / 7;
                 boolean encontrado = true;

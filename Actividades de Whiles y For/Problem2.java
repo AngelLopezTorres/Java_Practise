@@ -7,6 +7,7 @@ public class Problem2 {
         int numA;
         int numB;
         boolean salir = true;
+        
         while (salir) {
             System.out.println("Cual será la operación");
             operacion = sc.nextLine();
