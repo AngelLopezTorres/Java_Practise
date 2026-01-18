@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Problem6 {
+public class Problem06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //Validador de Tarjetas (Algoritmo de Luhn)

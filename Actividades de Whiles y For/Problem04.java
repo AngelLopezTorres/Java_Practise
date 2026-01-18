@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Problem4 {
+public class Problem04 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int dig = sc.nextInt();

@@ -3,13 +3,14 @@ import java.util.Scanner;
 public class Problem10 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        boolean exit = true;
         // Usamos sc.hasNext() para leer mientras haya entrada
-        while (sc.hasNext()) {
+        while (exit) {
             String input = sc.next();
             
             // Si el usuario introduce un punto, salimos del bucle
             if (input.equals(".")) {
-                break;
+                exit = false;
             }
                 int n = Integer.parseInt(input);
                 int p = n / 7;

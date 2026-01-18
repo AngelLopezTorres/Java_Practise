@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-public class Problem9 {
-    public static void main(String[] args) {
+public class Problem09 {
+    public static void main(String[] args) {  
         Scanner sc = new Scanner(System.in);
         // ACT 1 Divisor de 10
         boolean seguir = true;
